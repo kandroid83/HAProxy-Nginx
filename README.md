@@ -3,13 +3,6 @@
 **Студент:** Калинин Андрей  
 
 ---
-Проверка работоспособности
-Скриншот 1 – проверка синтаксиса HAProxy
-https://screenshots/task1_config_check.png
-
-Скриншот 2 – чередование запросов
-Выполнено несколько запросов к HAProxy, ответы приходят по очереди от первого и второго серверов.
-https://screenshots/task1_roundrobin.png
 
 
 ## Задание 1. Балансировка Round-robin на 4 уровне (TCP)
@@ -56,7 +49,7 @@ listen stats
 
 Проверка работоспособности
 Скриншот 1 – проверка синтаксиса HAProxy
-https://screenshots/task1_config_check.png
+![task1_config_check](screenshots/task1_config_check.png)
 
 Скриншот 2 – чередование запросов
 Выполнено несколько запросов к HAProxy, ответы приходят по очереди от первого и второго серверов.
