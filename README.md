@@ -4,6 +4,10 @@
 
 ---
 
+Проверка работоспособности
+Скриншот 1 – проверка синтаксиса HAProxy
+![task1_config_check](screenshots/task1_config_check.png)
+
 
 ## Задание 1. Балансировка Round-robin на 4 уровне (TCP)
 
