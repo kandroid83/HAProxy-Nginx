@@ -7,9 +7,11 @@
 Проверка работоспособности
 
 Скриншот 1 – проверка синтаксиса HAProxy
+
 ![task1_config_check](screenshots/task1_config_check.png)
 
 Скриншот 2 – чередование запросов
+
 ![task1_roundrobin](screenshots/task1_roundrobin.png)
 
 
