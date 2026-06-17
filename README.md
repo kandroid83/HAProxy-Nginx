@@ -1,19 +1,9 @@
 # Домашнее задание: Балансировка HAProxy + Nginx
 
-**Студент:** Калинин Андрей  
+**Студент:** Калинин Андрей
+
 
 ---
-
-Проверка работоспособности
-
-Скриншот 1 – проверка синтаксиса HAProxy
-
-![task1_config_check](screenshots/task1_config_check.png)
-
-Скриншот 2 – чередование запросов
-
-![task1_roundrobin](screenshots/task1_roundrobin.png)
-
 
 ## Задание 1. Балансировка Round-robin на 4 уровне (TCP)
 
@@ -22,7 +12,6 @@
 HAProxy настроен в режиме TCP (L4) с алгоритмом roundrobin и слушает порт 8080.
 
 ### Конфигурация HAProxy (задание 1)
-
 ```haproxy
 global
     log /dev/log local0
@@ -56,7 +45,15 @@ listen stats
     stats uri /stats
     stats refresh 5s
     stats auth admin:admin
+```
 
+Скриншот 1 
+
+![проверка синтаксиса HAProxy](screenshots/task1_config_check.png)
+
+Скриншот 2
+
+![чередование запросов](screenshots/task1_roundrobin.png)
 
 
 ## Задание 2. Балансировка Weighted Round Robin на 7 уровне (HTTP) с фильтрацией по домену
@@ -75,7 +72,7 @@ HAProxy работает в режиме HTTP (L7) с весами:
 Остальные запросы получают ответ 403 Forbidden.
 
 ### Конфигурация HAProxy (задание 2)
-haproxy
+```haproxy
 global
     log /dev/log local0
     log /dev/log local1 notice
@@ -119,5 +116,18 @@ listen stats
     stats uri /stats
     stats refresh 5s
     stats auth admin:admin
+```
 
 
+Проверка работоспособности
+Скриншот 1 
+
+![запросы с доменом example.local](screenshots/task2_example_local.png)
+
+Скриншот 2 
+
+![запрос с другим доменом (403 Forbidden)](screenshots/task2_forbidden.png)
+
+Скриншот 3
+
+![страница статистики HAProxy](screenshots/task2_stats.png)
