@@ -12,6 +12,11 @@
 HAProxy настроен в режиме TCP (L4) с алгоритмом roundrobin и слушает порт 8080.
 
 ### Конфигурация HAProxy (задание 1)
+
+Файл конфигурации: 
+
+[`haproxy_task1.cfg`](haproxy_task1.cfg)
+
 ```haproxy
 global
     log /dev/log local0
@@ -72,6 +77,11 @@ HAProxy работает в режиме HTTP (L7) с весами:
 Остальные запросы получают ответ 403 Forbidden.
 
 ### Конфигурация HAProxy (задание 2)
+
+Файл конфигурации:
+
+[`haproxy_task2.cfg`](haproxy_task2.cfg)
+
 ```haproxy
 global
     log /dev/log local0
