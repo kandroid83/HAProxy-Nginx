@@ -8,6 +8,10 @@
 Скриншот 1 – проверка синтаксиса HAProxy
 ![task1_config_check](screenshots/task1_config_check.png)
 
+Скриншот 2 – чередование запросов
+Выполнено несколько запросов к HAProxy, ответы приходят по очереди от первого и второго серверов.
+![task1_roundrobin](screenshots/task1_roundrobin.png)
+
 
 ## Задание 1. Балансировка Round-robin на 4 уровне (TCP)
 
@@ -51,11 +55,5 @@ listen stats
     stats refresh 5s
     stats auth admin:admin
 
-Проверка работоспособности
-Скриншот 1 – проверка синтаксиса HAProxy
-![task1_config_check](screenshots/task1_config_check.png)
 
-Скриншот 2 – чередование запросов
-Выполнено несколько запросов к HAProxy, ответы приходят по очереди от первого и второго серверов.
-https://screenshots/task1_roundrobin.png
 
